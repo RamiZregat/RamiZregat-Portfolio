@@ -234,8 +234,8 @@ Number and name of feature: Deploy and Extend Your Portfolio
 
 Estimate of time needed to complete: 5 hours
 
-Start time: 10am
+Start time: 11am
 
-Finish time: 6pm
+Finish time: 7pm
 
 Actual time needed to complete: 6 hours

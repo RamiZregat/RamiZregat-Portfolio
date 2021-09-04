@@ -147,6 +147,14 @@ class Landing extends React.Component {
                           </h6>
                           <p className="description mt-3">
                             <ul>
+                            <li>
+                                <a
+                                  target="blank"
+                                  href="https://thebooleans.github.io/PurePowerGym/"
+                                >
+                                  Pure-Power-Gym
+                                </a>
+                              </li>
                               <li>
                                 <a
                                   target="blank"
