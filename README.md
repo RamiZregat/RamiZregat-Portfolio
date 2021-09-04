@@ -227,3 +227,15 @@ Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=creativetim>
 ---------------------------------------------------------------------------------
 
 Live URL:https://ramizregat-portfolio.netlify.app/
+
+
+
+Number and name of feature: Deploy and Extend Your Portfolio
+
+Estimate of time needed to complete: 5 hours
+
+Start time: 10am
+
+Finish time: 6pm
+
+Actual time needed to complete: 6 hours
