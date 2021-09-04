@@ -108,7 +108,7 @@ class Profile extends React.Component {
                     <Col className="order-lg-1" lg="4">
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
-                          <span className="heading">1</span>
+                          <span className="heading">6</span>
                           <span className="description">Projects</span>
                         </div>
                         <div>
