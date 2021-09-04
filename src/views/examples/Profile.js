@@ -23,7 +23,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import profile from "assets/img/theme/team-4-800x800.jpg";
+import profile from "assets/img/theme/RamiZregat.png";
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -108,51 +108,50 @@ class Profile extends React.Component {
                     <Col className="order-lg-1" lg="4">
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
-                          <span className="heading">22</span>
-                          <span className="description">Friends</span>
+                          <span className="heading">1</span>
+                          <span className="description">Projects</span>
                         </div>
                         <div>
-                          <span className="heading">10</span>
-                          <span className="description">Photos</span>
+                          <span className="heading">2</span>
+                          <span className="description">Programming Languages</span>
                         </div>
                         <div>
-                          <span className="heading">89</span>
-                          <span className="description">Comments</span>
+                          <span className="heading">1</span>
+                          <span className="description">Sites</span>
                         </div>
                       </div>
                     </Col>
                   </Row>
                   <div className="text-center mt-5">
                     <h3>
-                      Jessica Jones{" "}
-                      <span className="font-weight-light">, 27</span>
+                      Rami Zregat{" "}
+                      <span className="font-weight-light">, 24</span>
                     </h3>
                     <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
+                      Jerash,Jordan
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
+                      Full Stack Developer,
+                      Civil Engineer
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
-                      University of Computer Science
+                      Yarmouk University 
                     </div>
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
                     <Row className="justify-content-center">
                       <Col lg="9">
                         <p>
-                          An artist of considerable range, Ryan — the name taken
-                          by Melbourne-raised, Brooklyn-based Nick Murphy —
-                          writes, performs and records all of his own music,
-                          giving it a warm, intimate feel with a solid groove
-                          structure. An artist of considerable range.
+                        I’m a Civil engineer but I have a passion towards programming so I went for it and I took a course from LTUC (Luminus Technical University College) this course is about programming and web development, I got so much better now on web development.
+And I'm now more interested to improve myself and find a job in this field.
                         </p>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <p>I'm a self-starter and capable to use technical skills for the betterment of the organization. I am eager to learn new skills and develop my career further on a professional basis and through working as a member of a team, Moreover, I would like to work in a professionality managed company and very much wilting to learn new.</p>
+                        {/* <a href="#pablo" onClick={e => e.preventDefault()}>
                           Show more
-                        </a>
+                        </a> */}
                       </Col>
                     </Row>
                   </div>
