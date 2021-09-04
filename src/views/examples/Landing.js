@@ -17,14 +17,8 @@
 */
 import React from "react";
 // nodejs library that concatenates classes
-import classnames from "classnames";
 import promo1 from "assets/img/theme/promo-1.png";
-import cardImg from "assets/img/theme/img-1-1200x1000.jpg";
 import ill2 from "assets/img/ill/ill-2.svg";
-import team1 from "assets/img/theme/team-1-800x800.jpg";
-import team2 from "assets/img/theme/team-2-800x800.jpg";
-import team3 from "assets/img/theme/team-3-800x800.jpg";
-import team4 from "assets/img/theme/team-4-800x800.jpg";
 
 // reactstrap components
 import {
@@ -40,15 +34,14 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import CardsFooter from "components/Footers/CardsFooter.js";
+import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 // index page sections
-import Download from "../IndexSections/Download.js";
 
 class Landing extends React.Component {
   state = {};
@@ -81,15 +74,17 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        {" "}
+                        <span>What excites you most about technology?</span>
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                        Excitement with the technology is just to know what’s
+                        next. New innovations are taking technology on the other
+                        level, Nobody can predict where the technology will take
+                        us in the coming years. So what achievements technology
+                        will do next is the best thing that excites the most.
                       </p>
-                      <div className="btn-wrapper">
+                      {/* <div className="btn-wrapper">
                         <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
@@ -112,7 +107,7 @@ class Landing extends React.Component {
                             Download React
                           </span>
                         </Button>
-                      </div>
+                      </div> */}
                     </Col>
                   </Row>
                 </div>
@@ -148,12 +143,43 @@ class Landing extends React.Component {
                             <i className="ni ni-check-bold" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Download Argon
+                            201 Projects
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            <ul>
+                              <li>
+                                <a
+                                  target="blank"
+                                  href="https://ramizregat.github.io/bus-mall/"
+                                >
+                                  Bus-Mall
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  target="blank"
+                                  href="https://ramizregat.github.io/Books-Shop/"
+                                >
+                                  Books-Shop
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  target="blank"
+                                  href="https://ramizregat.github.io/cookie-stand/sales.html"
+                                >
+                                  Cookie-Stand
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  target="blank"
+                                  href="https://ramizregat.github.io/chocolate-pizza/"
+                                >
+                                  Chocolate-Pizza
+                                </a>
+                              </li>
+                            </ul>
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
@@ -166,14 +192,14 @@ class Landing extends React.Component {
                               creative
                             </Badge>
                           </div>
-                          <Button
+                          {/* <Button
                             className="mt-4"
                             color="primary"
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Learn more
-                          </Button>
+                          </Button> */}
                         </CardBody>
                       </Card>
                     </Col>
@@ -184,12 +210,19 @@ class Landing extends React.Component {
                             <i className="ni ni-istanbul" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                            301 Projects
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            <ul>
+                              <li>
+                                <a
+                                  href="https://hornedbeastvoting.netlify.app/"
+                                  target="blank"
+                                >
+                                  Horned-Beast
+                                </a>
+                              </li>
+                            </ul>
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">
@@ -202,14 +235,14 @@ class Landing extends React.Component {
                               success
                             </Badge>
                           </div>
-                          <Button
+                          {/* <Button
                             className="mt-4"
                             color="success"
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Learn more
-                          </Button>
+                          </Button> */}
                         </CardBody>
                       </Card>
                     </Col>
@@ -220,13 +253,9 @@ class Landing extends React.Component {
                             <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                            401 Projects
                           </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
+                          <p className="description mt-3"></p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
                               marketing
@@ -238,14 +267,14 @@ class Landing extends React.Component {
                               launch
                             </Badge>
                           </div>
-                          <Button
+                          {/* <Button
                             className="mt-4"
                             color="warning"
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             Learn more
-                          </Button>
+                          </Button> */}
                         </CardBody>
                       </Card>
                     </Col>
@@ -258,11 +287,7 @@ class Landing extends React.Component {
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
-                  <img
-                    alt="..."
-                    className="img-fluid floating"
-                    src={promo1}
-                  />
+                  <img alt="..." className="img-fluid floating" src={promo1} />
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
@@ -271,9 +296,9 @@ class Landing extends React.Component {
                     </div>
                     <h3>Awesome features</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                      Every Project above is a unique project made with purpose
+                      to learn new things and apply these things as perfect as I
+                      could
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
@@ -287,9 +312,7 @@ class Landing extends React.Component {
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">
-                              Carefully crafted components
-                            </h6>
+                            <h6 className="mb-0">Working as intended</h6>
                           </div>
                         </div>
                       </li>
@@ -304,7 +327,7 @@ class Landing extends React.Component {
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
+                            <h6 className="mb-0">Unique Projects</h6>
                           </div>
                         </div>
                       </li>
@@ -319,9 +342,7 @@ class Landing extends React.Component {
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">
-                              Super friendly support team
-                            </h6>
+                            <h6 className="mb-0">Amazing page examples</h6>
                           </div>
                         </div>
                       </li>
@@ -335,12 +356,13 @@ class Landing extends React.Component {
             <Container>
               <Row className="row-grid align-items-center">
                 <Col md="6">
-                  <Card className="bg-default shadow border-0">
-                    <CardImg
-                      alt="..."
-                      src={cardImg}
-                      top
-                    />
+                  <iframe
+                    width="500"
+                    height="400"
+                    src="https://streamable.com/edrgl7"
+                  ></iframe>
+                  {/* <Card className="bg-default shadow border-0">
+                    <CardImg alt="..." src={cardImg} top />
                     <blockquote className="card-blockquote">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -367,36 +389,19 @@ class Landing extends React.Component {
                         continue whatever happens.
                       </p>
                     </blockquote>
-                  </Card>
+                  </Card> */}
                 </Col>
                 <Col md="6">
                   <div className="pl-md-5">
                     <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
                       <i className="ni ni-settings" />
                     </div>
-                    <h3>Our customers</h3>
+                    <h3>My Professional Pitch Video</h3>
                     <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
+                      This video is my professional pitch video, it explain my
+                      story with programming and why im into programing and how
+                      i got into this field.
                     </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <a
-                      className="font-weight-bold text-warning mt-5"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      A beautiful UI Kit for impactful websites
-                    </a>
                   </div>
                 </Col>
               </Row>
@@ -422,11 +427,14 @@ class Landing extends React.Component {
                       </div>
                     </div>
                     <div className="pl-4">
-                      <h4 className="display-3 text-white">Modern Interface</h4>
+                      <h6 className="display-3 text-white">
+                        Adaptable & Flexible
+                      </h6>
                       <p className="text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever.
+                        With rapid changes in technology, diversity and society,
+                        companies need employees who are open to new ideas,
+                        flexible enough to work through challenging issues, and
+                        generally able to cope when things don't go as planned.
                       </p>
                     </div>
                   </div>
@@ -440,20 +448,12 @@ class Landing extends React.Component {
                         </div>
                         <div className="pl-4">
                           <h5 className="title text-success">
-                            Awesome Support
+                            The Definition Of Adaptability
                           </h5>
                           <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
+                            The ability to change (or be changed) to fit changed
+                            circumstances.
                           </p>
-                          <a
-                            className="text-success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
                         </div>
                       </div>
                     </CardBody>
@@ -468,20 +468,9 @@ class Landing extends React.Component {
                         </div>
                         <div className="pl-4">
                           <h5 className="title text-warning">
-                            Modular Components
+                            The Definition Of Flexibility
                           </h5>
-                          <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
-                          </p>
-                          <a
-                            className="text-warning"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Learn more
-                          </a>
+                          <p>Capacity to be bent, usually without breaking.</p>
                         </div>
                       </div>
                     </CardBody>
@@ -506,7 +495,7 @@ class Landing extends React.Component {
               </svg>
             </div>
           </section>
-          <section className="section section-lg">
+          {/* <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -537,7 +526,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle"
                           color="warning"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-twitter" />
                         </Button>
@@ -545,7 +534,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="warning"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-facebook" />
                         </Button>
@@ -553,7 +542,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="warning"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-dribbble" />
                         </Button>
@@ -581,7 +570,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle"
                           color="primary"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-twitter" />
                         </Button>
@@ -589,7 +578,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="primary"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-facebook" />
                         </Button>
@@ -597,7 +586,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="primary"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-dribbble" />
                         </Button>
@@ -623,7 +612,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle"
                           color="info"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-twitter" />
                         </Button>
@@ -631,7 +620,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="info"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-facebook" />
                         </Button>
@@ -639,7 +628,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="info"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-dribbble" />
                         </Button>
@@ -665,7 +654,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle"
                           color="success"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-twitter" />
                         </Button>
@@ -673,7 +662,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="success"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-facebook" />
                         </Button>
@@ -681,7 +670,7 @@ class Landing extends React.Component {
                           className="btn-icon-only rounded-circle ml-1"
                           color="success"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <i className="fa fa-dribbble" />
                         </Button>
@@ -691,8 +680,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section className="section section-lg pt-0">
+          </section> */}
+          {/* <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
                 <div className="p-5">
@@ -722,17 +711,17 @@ class Landing extends React.Component {
                 </div>
               </Card>
             </Container>
-          </section>
-          <section className="section section-lg bg-gradient-default">
+          </section> */}
+          <section className="section section-lg " color="white">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
-                  <h2 className="display-3 text-white">Build something</h2>
-                  <p className="lead text-white">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record low maximum sea ice extent tihs year down
-                    to low ice.
+                  <h2 color="black">Great Teammate</h2>
+                  <p color="black">
+                    The qualities that make a good team player include:
+                    Commitment to ensuring the team succeeds with all tasks,
+                    duties, and projects. Willingness to help a team member in
+                    need.
                   </p>
                 </Col>
               </Row>
@@ -741,30 +730,36 @@ class Landing extends React.Component {
                   <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                     <i className="ni ni-settings text-primary" />
                   </div>
-                  <h5 className="text-white mt-3">Building tools</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <h5 color="black">Supportive</h5>
+                  <p color="black">
+                    supports others when they are struggling,you never know what
+                    someone may be battling
                   </p>
                 </Col>
                 <Col lg="4">
                   <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                     <i className="ni ni-ruler-pencil text-primary" />
                   </div>
-                  <h5 className="text-white mt-3">Grow your market</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <h5 color="black">Never Blame Others</h5>
+                  <p color="black">
+                    Leaders (and great teammates) accept responsibility.
+                    Adversity is inevitable; handle conflict by holding yourself
+                    accountable, and focus on what you can do to help the team
+                    succeed.
                   </p>
                 </Col>
                 <Col lg="4">
                   <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
                     <i className="ni ni-atom text-primary" />
                   </div>
-                  <h5 className="text-white mt-3">Launch time</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <h5 color="black">
+                    shows a positive and energetic attitude.
+                  </h5>
+                  <p color="black">
+                    Consistency is key. A great teammate is positive, full of
+                    energy and enthusiasm, regardless of the situation.
+                    Positivity will transfer to the other members of your team,
+                    but, adversely, negativity will do the same.
                   </p>
                 </Col>
               </Row>
@@ -790,7 +785,7 @@ class Landing extends React.Component {
             <Container>
               <Row className="justify-content-center mt--300">
                 <Col lg="8">
-                  <Card className="bg-gradient-secondary shadow">
+                  {/* <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
                       <h4 className="mb-1">Want to work with us?</h4>
                       <p className="mt-0">
@@ -798,7 +793,7 @@ class Landing extends React.Component {
                       </p>
                       <FormGroup
                         className={classnames("mt-5", {
-                          focused: this.state.nameFocused
+                          focused: this.state.nameFocused,
                         })}
                       >
                         <InputGroup className="input-group-alternative">
@@ -817,7 +812,7 @@ class Landing extends React.Component {
                       </FormGroup>
                       <FormGroup
                         className={classnames({
-                          focused: this.state.emailFocused
+                          focused: this.state.emailFocused,
                         })}
                       >
                         <InputGroup className="input-group-alternative">
@@ -829,8 +824,12 @@ class Landing extends React.Component {
                           <Input
                             placeholder="Email address"
                             type="email"
-                            onFocus={() => this.setState({ emailFocused: true })}
-                            onBlur={() => this.setState({ emailFocused: false })}
+                            onFocus={() =>
+                              this.setState({ emailFocused: true })
+                            }
+                            onBlur={() =>
+                              this.setState({ emailFocused: false })
+                            }
                           />
                         </InputGroup>
                       </FormGroup>
@@ -856,14 +855,13 @@ class Landing extends React.Component {
                         </Button>
                       </div>
                     </CardBody>
-                  </Card>
+                  </Card> */}
                 </Col>
               </Row>
             </Container>
           </section>
-          <Download />
         </main>
-        <CardsFooter />
+        <SimpleFooter />
       </>
     );
   }
